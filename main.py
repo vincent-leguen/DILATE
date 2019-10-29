@@ -75,7 +75,7 @@ def eval_model(net,loader, gamma,verbose=1):
         inputs, target, breakpoints = data
         inputs = torch.tensor(inputs, dtype=torch.float32).to(device)
         target = torch.tensor(target, dtype=torch.float32).to(device)
-        bath_size, N_output = target.shape[0:2]
+        batch_size, N_output = target.shape[0:2]
         outputs = net(inputs)
          
         # MSE    
