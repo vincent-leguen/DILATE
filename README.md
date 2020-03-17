@@ -8,7 +8,7 @@ Code for our NeurIPS 2019 paper "Shape and Time Distortion Loss for Training Dee
 If you find this code useful for your research, please cite our [paper](https://papers.nips.cc/paper/8672-shape-and-time-distortion-loss-for-training-deep-time-series-forecasting-models):
 
 ```
-@incollection{leguen19phydnet,
+@incollection{leguen19dilate,
 title = {Shape and Time Distortion Loss for Training Deep Time Series Forecasting Models},
 author = {Le Guen, Vincent and Thome, Nicolas},
 booktitle = {Advances in Neural Information Processing Systems},
