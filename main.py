@@ -86,8 +86,8 @@ def eval_model(net,loader, gamma,verbose=1):
             target_k_cpu = target[k,:,0:1].view(-1).detach().cpu().numpy()
             output_k_cpu = outputs[k,:,0:1].view(-1).detach().cpu().numpy()
 
-            loss_dtw += dtw(target_k_cpu,output_k_cpu)
             path, sim = dtw_path(target_k_cpu, output_k_cpu)   
+            loss_dtw += sim
                        
             Dist = 0
             for i,j in path:
